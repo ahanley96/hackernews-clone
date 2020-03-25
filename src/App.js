@@ -1,15 +1,12 @@
-import React, { useEffect, useState } from 'react';
-import { getStoryIds } from './services/hackernewsAPI'
+import React from 'react';
+import StoriesContainer from './containers/StoriesContainer';
+//import StoriesContainer from './containers/StoriesContainer';
+
 
 
 export const App = () => {
 
-  const [storyIds, setStoryIds] = useState([]);
-
-  useEffect(() => {
-    getStoryIds().then(data => setStoryIds(data))
-  }, []);
-
-  return <p1>{JSON.stringify(storyIds)}</p1>;
-
+  return (
+    <StoriesContainer />
+  )
 }

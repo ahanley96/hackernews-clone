@@ -1,4 +1,15 @@
--Create get route for each of the top/newest/best stories
--Look into testing the routes (CI/CD)
--Style app component
+Immidiate Tasks:
+
+-Create get route for each of the top/newest/best stories [x]
+-Refactor axios routes into componentDidMount() []
+-Utilise fetched data within render function []
+    
+
+    
+
+
+Look into:
+
+-Look into testing the routes (CI/CD) []
+-Style app component []
 
