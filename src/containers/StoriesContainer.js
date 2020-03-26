@@ -9,13 +9,21 @@ const StoriesContainer = () => {
     useEffect(() => {
 
         getNewStoryIds().then(data => setStoryIds(data));
+
+        
         
     }, []);
 
     console.log(storyIds)
   
     return storyIds.map(storyId => (
-        <Story storyId={storyId}/>
+
+        <div>
+            <Story storyId={storyId}/>
+        </div>
+
+        
+
     ))
 }
 
