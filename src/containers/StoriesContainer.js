@@ -16,7 +16,7 @@ const StoriesContainer = () => {
   
     return storyIds.map(storyId => (
         <Story storyId={storyId}/>
-    ));
+    ))
 }
 
 export default StoriesContainer
