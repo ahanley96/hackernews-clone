@@ -1,20 +1,32 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom'
-import StoriesContainer from './containers/StoriesContainer';
+import { Switch, Route, BrowserRouter as Router } from 'react-router-dom'
+import { Header } from './components/Header/Header'
+import { BestStories } from './components/BestStories/BestStories'
+import { TopStories } from './components/TopStories/TopStories'
+import { Home } from './components/Home/Home'
+import './App.css'
+
 //import StoriesContainer from './containers/StoriesContainer';
 
-import { Routes } from './router'
-import { Header } from './components/Header/Header'
+
+
 
 export const App = () => {
 
   return (
-    <div className="App">
-      <Router>
+
+    <Router>
+
+      <div className="App">
+
         <Header />
-        <Routes />
-      </Router>
-    </div>
+        <Route exact path="/" component={Home}/>
+        <Route path="/topstories" component={TopStories}/>
+        <Route path="/beststories" component={BestStories}/>
+        
+      </div>
+
+    </Router>
   )
 }
 

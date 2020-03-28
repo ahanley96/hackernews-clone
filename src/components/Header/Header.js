@@ -1,38 +1,45 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 export const Header = () => {
     
     return (
 
-        <header id="news-header">
-            <section>
+       
 
-                <b className="brand">
-                    <NavLink to="/">Hacker News</NavLink>
-                </b>
+        <nav>
 
-                <div className="nav">
+            <b className="brand">
+                <h3>Hackernews</h3>
+            </b>
 
-                    <ul>
+            <div>
 
+                <ul className="nav-links">
+
+                    <Link to="/">
                         <li>
-                            <NavLink to="/">New Stories</NavLink>
+                            Home
                         </li>
+                    </Link>
+                   <Link to="/topstories">
                         <li>
-                            <NavLink to="/">Top Stories</NavLink>
+                            Top Stories
                         </li>
+                    </Link>
+                    <Link to="/beststories">
                         <li>
-                            <NavLink to="/">Best Stories</NavLink>
+                            Best Stories
                         </li>
+                    </Link>
 
-                    </ul>
+                </ul>
 
-                </div>
+            </div>
 
-            </section>
+        </nav>
             
-        </header>
+
 
     )
 }
