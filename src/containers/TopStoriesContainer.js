@@ -13,8 +13,6 @@ export const TopStoriesContainer = () => {
 
     
     }, []);
-
-    console.log(storyIds)
   
     return storyIds.map(storyId => (
 

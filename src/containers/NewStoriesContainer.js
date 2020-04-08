@@ -14,7 +14,7 @@ const NewStoriesContainer = () => {
         
     }, []);
 
-    console.log(storyIds)
+ 
   
     return storyIds.map(storyId => (
 

@@ -13,8 +13,6 @@ export const BestStoriesContainer = () => {
 
     
     }, []);
-
-    console.log(storyIds)
   
     return storyIds.map(storyId => (
 
