@@ -9,18 +9,22 @@ export const Header = () => {
 
         <div className="nav">
 
-            <Link to="/">
-                <a href="#" className="link">Home</a>
-            </Link>
+            <ul class className="links">
+                
+                <Link to="/">
+                    <li id="home">Home</li>
+                </Link>
 
-            <Link to="/topstories">
-                <a href="#" className="link">Top Stories</a>
-            </Link>
+                <Link to="/topstories">
+                    <li id="top-stories">Top Stories</li>
+                </Link>
 
-            <Link to="/beststories">
-                <a href="#" className="link">Best Stories</a>
-            </Link>
+                <Link to="/beststories">
+                    <li id="best-stories">Best Stories</li>
+                </Link>
             
+            </ul>
+           
         </div>
 
     )

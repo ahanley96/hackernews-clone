@@ -29,19 +29,26 @@ const Story = (props) => {
 
             </span>
 
-            <Link to={`/story/${story.id}`}>
-                {story.title}
-            </Link>
+            
 
-            <span>
+                <a href={story.url}>
 
-                {story.url} |
+                   <h4>{story.title}</h4>
 
-            </span>
+                </a>
+
 
             <span class="meta">
 
-                By: {story.by} | {timeConverter(story.time)} | Comments: {story.descendants}
+                By: {story.by} | {timeConverter(story.time)} |
+                
+                <span className="comments">
+
+                <Link to={`/story/${story.id}`}>
+                    See comments: {story.descendants}
+                </Link>
+
+                </span>
 
             </span>
                 

@@ -1,13 +1,18 @@
 
 .nav {
-    display: flex;
-    justify-content: space-around;
-    background-color: #e17842;
-  }
-.links {
-    color: white;
-    text-decoration: none;
-  }
+  display: flex;
+  width: 100vw;
+  justify-content: space-around;
+  background-color: #e17842;
+}
+
+/*  */
+
+.nav li {
+  list-style-type: none;
+  color: white;
+  text-decoration: none;
+}
 
 /* 
 nav {

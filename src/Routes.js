@@ -18,19 +18,15 @@ to handle all routes throughout the webapp.
 export const Routes = () => {
 
     return (
-        
-        <Router>
 
-            <Switch>
+        <Switch>
 
-                <Route exact path="/" component={Home}/>
-                <Route path="/topstories" component={TopStories}/>
-                <Route path="/beststories" component={BestStories}/>
-                <Route path="/story/:id" component={SingleStory}/> 
+            <Route exact path="/" component={Home}/>
+            <Route path="/topstories" component={TopStories}/>
+            <Route path="/beststories" component={BestStories}/>
+            <Route path="/story/:id" component={SingleStory}/> 
 
-            </Switch>
-
-        </Router>
+        </Switch>
 
     )
 

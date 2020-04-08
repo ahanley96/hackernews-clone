@@ -4,9 +4,6 @@ import { Header } from './components/Header/Header'
 import './App.css'
 import { Routes } from './Routes';
 
-//import StoriesContainer from './containers/StoriesContainer';
-
-
 
 
 export const App = () => {
