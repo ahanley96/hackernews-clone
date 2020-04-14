@@ -1,35 +1,86 @@
-
-.nav {
+.nav-bar {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background-color: grey;
+  color: white;
   display: flex;
-  width: 100vw;
-  justify-content: space-around;
-  background-color: #e17842;
+  position: fixed;
+  align-items: center;
 }
 
-/*  */
+.nav-spacing {
+  flex: 0.9;
+}
 
-.nav li {
-  list-style-type: none;
-  color: white;
+.nav-items ul {
+  display: flex;
+  list-style: none;
+}
+
+.link {
   text-decoration: none;
 }
 
-/* 
-nav {
-
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 10vh;
-    background-color: rgb(15, 92, 47);
-    color: black;
+.nav-items ul li {
+  padding: 0 5px;
+  text-decoration: none;
+  color: white;
+  
 }
 
-nav-links {
-    width: 110%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
-    text-decoration: none;
-} */
+.nav-items ul li:hover {
+  cursor: pointer;
+  color: #f60;
+}
+
+.nav-logo {
+  cursor: pointer;
+  padding: 0 10px;
+  color: #f60;
+
+}
+
+.nav-icon {
+  cursor: pointer;
+  padding: 0 15px;
+}
+
+.side-nav-bar {
+  height: 100%;
+  background-color: grey;
+  color: white;
+  position: fixed;
+  z-index: 300;
+  top: 0;
+  left: 0;
+  width: 200px;
+}
+
+.side-nav-bar ul {
+  list-style: none;
+  display: flex;
+  color: white;
+  flex-direction: column;
+}
+
+.side-nav-bar ul li {
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+.side-nav-bar ul li:hover {
+  cursor: pointer;
+  color: #f60;
+}
+
+.backdrop {
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.3);
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 200;
+}

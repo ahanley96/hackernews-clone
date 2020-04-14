@@ -1,26 +1,64 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom'
 import { Header } from './components/Header/Header'
+import { SideBarNav } from './components/Header/SideBarNav'
+import { BackDrop } from './components/Header/BackDrop';
+
 import './App.css'
 import { Routes } from './Routes';
 
 
+export class App extends Component {
 
-export const App = () => {
+  state = {
 
-  return (
+    sideBarOpen: true
 
-    <Router>
+  }
 
-      <div className="App">
+  handleOpen = () => {
 
-        <Header />
-        <Routes/>
-        
-      </div>
+    this.setState({
 
-    </Router>
-  )
+      sideBarOpen: true
+
+    })
+
+  }
+
+  handleClose = () => {
+    
+    this.setState({
+
+      sideBarOpen: false
+
+    })
+  }
+
+  render() {
+    return (
+
+      <Router>
+  
+        <div className="App">
+  
+          <Header open = {this.handleOpen}/>
+
+          {this.state.sideBarOpen ? (
+            <div>
+              <SideBarNav close={this.handleClose}/>
+              <BackDrop/>
+            </div>
+          ) : null}
+          
+          <Routes/>
+          
+        </div>
+  
+      </Router>
+    )
+  }
+  
 }
 
-//<StoriesContainer />
+

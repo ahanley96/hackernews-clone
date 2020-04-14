@@ -1,11 +1,11 @@
 import React from 'react'
-import BestStoriesContainer from '../../containers/NewStoriesContainer'
 import NewStoriesContainer from '../../containers/NewStoriesContainer'
+import './Home.css'
 
 export const Home = () => {
     
     return (
-        <div className="home">
+        <div className="container">
             <NewStoriesContainer />
         </div>
     )

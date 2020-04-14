@@ -15,10 +15,15 @@ export const BestStoriesContainer = () => {
     }, []);
   
     return storyIds.map(storyId => (
+        
+        <div className="wrapper">
 
-        <div>
-            <Story storyId={storyId}/>
+            <div className="container">
+                <Story storyId={storyId}/>
+            </div>
+
         </div>
+        
 
     ))
 }

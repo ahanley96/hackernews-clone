@@ -24,7 +24,7 @@
     margin-left: 5px;
   }
 
-  a {
+  .story a {
   display: block;
   text-overflow: ellipsis;
   position: relative;
