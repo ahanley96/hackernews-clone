@@ -4,7 +4,6 @@ import { BestStories } from './components/BestStories/BestStories'
 import { TopStories } from './components/TopStories/TopStories'
 import { Home } from './components/Home/Home'
 import { SingleStory } from './components/SingleStory/SingleStory'
-import { Test } from './components/Test'
 
 /*This component is imported and used in the App component 
 to handle all routes throughout the webapp. 
