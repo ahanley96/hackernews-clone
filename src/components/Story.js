@@ -18,6 +18,8 @@ const Story = (props) => {
 
     }, []);
 
+    console.log(story.kids)
+
     return story && story.url ? (
 
         <>
@@ -44,7 +46,14 @@ const Story = (props) => {
                 
                 <span className="comments">
 
-                <Link to={`/story/${story.id}`}>
+                //I need this to be passed down to the SingleStory component
+                <Link to={{
+                    pathname: `/story/${story.id}`,
+                    state: {
+                        kids: this.story.kids
+                    }
+                    
+                }}>
                     See comments: {story.descendants}
                 </Link>
 

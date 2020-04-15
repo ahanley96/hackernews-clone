@@ -1,11 +1,6 @@
-import React from "react"
-import './Header.css'
+import React from "react";
+import "./Header.css";
 
-export const BackDrop = () => {
-
-    return (
-
-        <div className="backdrop"/>
-
-    )
-}
+export const BackDrop = ({ close }) => {
+  return <div className="backdrop" onClick={close} />;
+};
